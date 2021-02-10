@@ -1,0 +1,397 @@
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="tags for website">
+  <meta name="description" content="front-end starter">
+  <meta name="author" content="Labrin.net">
+  
+    <title> Home - Project Title </title>
+
+<link href="css/main.css" rel="stylesheet"></head>
+
+<body>
+
+  
+  
+  <header id="header">
+    <div class="container">
+      <div class="row headerMain">
+        <div class="col-md-2 col-8 logo">
+          <a href="">
+            <img class="img-fluid" src="../assets/logo.png" alt=""> 
+          </a>
+        </div>  
+        <div class="col-md-7">
+          <ul class="pagesLink">
+            <li><a href="">how it works</a></li>
+            <li><a href="">buy for me</a></li>
+            <li><a href="">shipping calculator</a></li>
+            <li><a href="">news</a></li>
+            <li><a href="">contacts</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 langLogin">
+          <select id="selectLanguages">
+            <option value="AZE">AZE</option>
+            <option value="EN">EN</option>
+            <option value="RU">RU</option>
+          </select>
+  
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            SHAIG MURADOV
+          </button>
+          <i class="fa fa-bell"></i>
+          <div class="dropdown-menu dropdown-menu-right">
+              <button class="dropdown-item" type="button">My foreign addresses</button>
+              <button class="dropdown-item" type="button">ORDERS</button>
+              <button class="dropdown-item" type="button">My declarations</button>
+              <button class="dropdown-item" type="button">Balance</button>
+              <button class="dropdown-item" type="button">Settings</button>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div class="menuBar">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="mobileMenu">
+        <div class="langLogin">
+          <select id="selectLanguages">
+            <option value="AZE">AZE</option>
+            <option value="EN">EN</option>
+            <option value="RU">RU</option>
+          </select>
+          <p>SHAIG MURADOV</p>
+        </div>
+        <ul class="pagesLink">
+            <li><a href="">how it works</a></li>
+            <li><a href="">buy for me</a></li>
+            <li><a href="">shipping calculator</a></li>
+            <li><a href="">news</a></li>
+            <li><a href="">contacts</a></li>
+          </ul>
+      </div>
+      <div class="layoutMobile"></div>
+    </div>
+  </header>
+
+  <section id="headSection">
+    <div class="container">
+      <div class="row contentCenter">
+        <div class="col-md-6">
+          <h1>
+            SHOP FROM TURKEY
+            SHIP TO UKRAINE
+          </h1>
+          <p>
+            Some quick example text to build on the card title and make up the bulk of the card's content.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid" src="../assets/cargoimg.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="calculate">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 selectCountryContainer">
+          <select id="selectCountry">
+            <option value="Turkey">Turkey</option>
+            <option value="USA">USA</option>
+            <option value="China">China</option>
+          </select>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="cargoKq">
+            <input type="number" onKeyDown="return false" min="1" max="100">
+            <select id="selectKqLbs">
+              <option value="KG">KG</option>
+              <option value="LBS">LBS</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="priceDescription">
+            <div class="priceDes">
+              <p>
+                Calculate shipping price
+              </p>
+            </div>
+            <div class="price">
+              <p>
+                $ 0.0
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-6 col-sm-12">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">There is liqued inside the product</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="howWeWork">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h4>
+            HOW WE WORK?
+          </h4>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="headLineImg" style="background-image: url('../assets/map.png');"></div>
+          <p class="headDes">
+            SIGN IN
+          </p>
+          <p>
+            Sign up now and instantly get
+            your own free address in Turkey
+            Use your address as delivery address
+            at checkout while shopping..
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="headLineImg" style="background-image: url('../assets/callcenter.png');"></div>
+          <p class="headDes">
+            Use the "Order" service
+          </p>
+          <p>
+            If you are not able to order by yourself
+            send us a link to your favorite
+            product from Turkish shopping
+            sites with the "Order" service
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="headLineImg" style="background-image: url('../assets/door.png');"></div>
+          <p class="headDes">
+            Get your orders to your home
+          </p>
+          <p>
+            Deliver the product you ordered
+            from our office or we will
+            deliver it to your home.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="tarrifs">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h4>
+            HOW WE WORK?
+          </h4>
+        </div>
+        <div class="col-md-12">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Weight</th>
+                <th scope="col">Liquid products</th>
+                <th scope="col">Sale</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0 kg - 0.25 kg</td>
+                <td>1.50 USD</td>
+                <td>1.00 USD</td>
+              </tr>
+              <tr>
+                <td>0.25 kg - 0..5 kg</td>
+                <td>3.00 USD</td>
+                <td>2.00 USD</td>
+              </tr>
+              <tr>
+                <td>0.5 kg - 0.75 kg</td>
+                <td>4.50 USD</td>
+                <td>3.00 USD</td>
+              </tr>
+              <tr>
+                <td>0.75 kg - 1 kg</td>
+                <td>5.90 USD</td>
+                <td>3.90 USD</td>
+              </tr>
+              <tr>
+                <td>1kg and more</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>10 kg and more</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="news">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h4>Our Latest News</h4>
+        </div>
+        <div class="col-md-4">
+          <a href="" class="newsLink">
+            <div class="newsImg" style="background-image: url('../assets/cargocar.png');"></div>
+            <div class="newsDescription">
+              <p class="newsHead">
+                Card title
+              </p>
+              <p class="newsDescriptionText">
+                Some quick example text to build on the card title and make up the bulk of the card's content.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="" class="newsLink">
+            <div class="newsImg" style="background-image: url('../assets/airplane.png');"></div>
+            <div class="newsDescription">
+              <p class="newsHead">
+                Card title
+              </p>
+              <p class="newsDescriptionText">
+                Some quick example text to build on the card title and make up the bulk of the card's content.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="" class="newsLink">
+            <div class="newsImg" style="background-image: url('../assets/container.png');"></div>
+            <div class="newsDescription">
+              <p class="newsHead">
+                Card title
+              </p>
+              <p class="newsDescriptionText">
+                Some quick example text to build on the card title and make up the bulk of the card's content.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="popular">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h4>
+            Popular Shopping Websites in Turkey
+          </h4>
+        </div>
+        <div class="col-md-10 offset-md-1">
+          <div class="owl-carousel popularCarousel owl-theme">
+            <div class="item">
+              <a href="">
+                <div class="logoPopular" style="background-image: url('../assets/lc.png');"></div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="">
+                <div class="logoPopular" style="background-image: url('../assets/karaca.png');"></div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="">
+                <div class="logoPopular" style="background-image: url('../assets/flo.png');"></div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="">
+                <div class="logoPopular" style="background-image: url('../assets/desa.png');"></div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="">
+                <div class="logoPopular" style="background-image: url('../assets/beymen.png');"></div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="">
+                <div class="logoPopular" style="background-image: url('../assets/karaca.png');"></div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="">
+                <div class="logoPopular" style="background-image: url('../assets/flo.png');"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 whiteLogo">
+          <a href="">
+            <img class="img-fluid" src="../assets/whiteLogo.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <ul class="siteMap">
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">Tarrifs</a></li>
+            <li><a href="">LOGISTIC TERMS</a></li>
+            <li><a href="">SERVICES</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <ul class="siteMap">
+            <li><a href="">SHOPS</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">NEWS</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <ul class="appLinks">
+            <li>
+              <a href="">
+                <img class="img-fluid" src="../assets/google.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img class="img-fluid" src="../assets/ios.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script type="text/javascript" src="js/main.js"></script></body>
+
+</html>

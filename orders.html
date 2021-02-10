@@ -1,0 +1,635 @@
+<html class="no-js" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="tags for website">
+    <meta name="description" content="front-end starter">
+    <meta name="author" content="Labrin.net">
+    
+      <title> Home - Project Title </title>
+
+<link href="css/main.css" rel="stylesheet"></head>
+
+<body>
+
+    
+    
+    <header id="header">
+      <div class="container">
+        <div class="row headerMain">
+          <div class="col-md-2 col-8 logo">
+            <a href="">
+              <img class="img-fluid" src="../assets/logo.png" alt=""> 
+            </a>
+          </div>  
+          <div class="col-md-7">
+            <ul class="pagesLink">
+              <li><a href="">how it works</a></li>
+              <li><a href="">buy for me</a></li>
+              <li><a href="">shipping calculator</a></li>
+              <li><a href="">news</a></li>
+              <li><a href="">contacts</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 langLogin">
+            <select id="selectLanguages">
+              <option value="AZE">AZE</option>
+              <option value="EN">EN</option>
+              <option value="RU">RU</option>
+            </select>
+    
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              SHAIG MURADOV
+            </button>
+            <i class="fa fa-bell"></i>
+            <div class="dropdown-menu dropdown-menu-right">
+                <button class="dropdown-item" type="button">My foreign addresses</button>
+                <button class="dropdown-item" type="button">ORDERS</button>
+                <button class="dropdown-item" type="button">My declarations</button>
+                <button class="dropdown-item" type="button">Balance</button>
+                <button class="dropdown-item" type="button">Settings</button>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <div class="menuBar">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="mobileMenu">
+          <div class="langLogin">
+            <select id="selectLanguages">
+              <option value="AZE">AZE</option>
+              <option value="EN">EN</option>
+              <option value="RU">RU</option>
+            </select>
+            <p>SHAIG MURADOV</p>
+          </div>
+          <ul class="pagesLink">
+              <li><a href="">how it works</a></li>
+              <li><a href="">buy for me</a></li>
+              <li><a href="">shipping calculator</a></li>
+              <li><a href="">news</a></li>
+              <li><a href="">contacts</a></li>
+            </ul>
+        </div>
+        <div class="layoutMobile"></div>
+      </div>
+    </header>
+
+
+    <section id="userInfoSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 userInfo">
+                    <div class="profilePhotoUser" style="background-image: url('../assets/userPhoto.png');"></div>
+                    <div class="moreInfoUser">
+                        <h3>
+                            SHAIG MURADOV
+                        </h3>
+                        <p class="customerId">
+                            CUSTOMER code: <span>#7465328</span>
+                        </p>
+                        <p class="dateLastDay">
+                            Last 30 days- 0.00$
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 balanceUser">
+                    <h5>
+                        Balance (USD)
+                    </h5>
+                    <ul>
+                        <li>
+                            <p>$ USD: 0.00</p>
+                        </li>
+                        <li>
+                            <p>‎₺ TRY: 0.00</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 btnsUser">
+                    <ul>
+                        <li><button><i class="fa fa-box"></i> Order <i class="fa fa-plus"></i></button></li>
+                        <li><button><i class="fa fa-file"></i> Add a declaration</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="orders">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="leftMenuLinks">
+                        <li class="activeLink"><a href="">My foreign addresses</a></li>
+                        <li><a href="">ORDERS</a></li>
+                        <li><a href="">My DECLARATIONS</a></li>
+                        <li><a href="">BALANCE</a></li>
+                        <li><a href="">SETTINGS</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <nav>
+                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                                role="tab" aria-controls="nav-home" aria-selected="true">All</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                                role="tab" aria-controls="nav-profile" aria-selected="false">New (3)</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <table class="table table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            </label>
+                                        </th>
+                                        <th>#</th>
+                                        <th>Order link</th>
+                                        <th>Count</th>
+                                        <th>Color</th>
+                                        <th>Size</th>
+                                        <th>Price</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            </label>
+                                        </td>
+                                        <td>1</td>
+                                        <td><a href="">
+                                                Donna R. Folse
+                                            </a></td>
+                                        <td>1</td>
+                                        <td>red</td>
+                                        <td>XS</td>
+                                        <td>20.00 $</td>
+                                        <td>
+                                            <ul class="btnsTotal">
+                                                <li>
+                                                    <button class="btnPayTotal" type="button" class="btn btn-primary"
+                                                        data-toggle="modal" data-target="#exampleModalCenter">
+                                                        Pay
+                                                    </button>
+
+                                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1"
+                                                        role="dialog" aria-labelledby="exampleModalCenterTitle"
+                                                        aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLongTitle">
+                                                                        Approve your order</h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    Do you approve order?
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary"
+                                                                        data-dismiss="modal">CANCEL</button>
+                                                                    <button type="button"
+                                                                        class="btn btn-primary">YES</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa fa-edit"></i>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa fa-trash"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            </label>
+                                        </td>
+                                        <td>2</td>
+                                        <td><a href="">
+                                                Donna R. Folse
+                                            </a></td>
+                                        <td>1</td>
+                                        <td>red</td>
+                                        <td>XS</td>
+                                        <td>20.00 $</td>
+                                        <td>
+                                            <ul class="btnsTotal">
+                                                <li>
+                                                    <button class="btnPayTotal">
+                                                        Pay
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa fa-edit"></i>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa fa-trash"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            </label>
+                                        </td>
+                                        <td>3</td>
+                                        <td><a href="">
+                                                Donna R. Folse
+                                            </a></td>
+                                        <td>1</td>
+                                        <td>red</td>
+                                        <td>XS</td>
+                                        <td>20.00 $</td>
+                                        <td>
+                                            <ul class="btnsTotal">
+                                                <li>
+                                                    <button class="btnPayTotal">
+                                                        Pay
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa fa-edit"></i>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa fa-trash"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            </label>
+                                        </td>
+                                        <td>4</td>
+                                        <td><a href="">
+                                                Donna R. Folse
+                                            </a></td>
+                                        <td>1</td>
+                                        <td>red</td>
+                                        <td>XS</td>
+                                        <td>20.00 $</td>
+                                        <td>
+                                            <ul class="btnsTotal">
+                                                <li>
+                                                    <button class="btnPayTotal">
+                                                        Pay
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa fa-edit"></i>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa fa-trash"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            </label>
+                                        </td>
+                                        <td>5</td>
+                                        <td><a href="">
+                                                Donna R. Folse
+                                            </a></td>
+                                        <td>1</td>
+                                        <td>red</td>
+                                        <td>XS</td>
+                                        <td>20.00 $</td>
+                                        <td>
+                                            <ul class="btnsTotal">
+                                                <li>
+                                                    <button class="btnPayTotal">
+                                                        Pay
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa fa-edit"></i>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa fa-trash"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <table class="table table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            </label>
+                                        </th>
+                                        <th>#</th>
+                                        <th>Order link</th>
+                                        <th>Count</th>
+                                        <th>Color</th>
+                                        <th>Size</th>
+                                        <th>Price</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            </label>
+                                        </td>
+                                        <td>1</td>
+                                        <td><a href="">
+                                                Donna R. Folse
+                                            </a></td>
+                                        <td>1</td>
+                                        <td>red</td>
+                                        <td>XS</td>
+                                        <td>20.00 $</td>
+                                        <td>
+                                            <ul class="btnsTotal">
+                                                <li>
+                                                    <button class="btnPayTotal">
+                                                        Pay
+                                                    </button>
+
+                                                </li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa fa-edit"></i>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa fa-trash"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            </label>
+                                        </td>
+                                        <td>2</td>
+                                        <td><a href="">
+                                                Donna R. Folse
+                                            </a></td>
+                                        <td>1</td>
+                                        <td>red</td>
+                                        <td>XS</td>
+                                        <td>20.00 $</td>
+                                        <td>
+                                            <ul class="btnsTotal">
+                                                <li>
+                                                    <button class="btnPayTotal">
+                                                        Pay
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa fa-edit"></i>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa fa-trash"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            </label>
+                                        </td>
+                                        <td>3</td>
+                                        <td><a href="">
+                                                Donna R. Folse
+                                            </a></td>
+                                        <td>1</td>
+                                        <td>red</td>
+                                        <td>XS</td>
+                                        <td>20.00 $</td>
+                                        <td>
+                                            <ul class="btnsTotal">
+                                                <li>
+                                                    <button class="btnPayTotal">
+                                                        Pay
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa fa-edit"></i>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa fa-trash"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            </label>
+                                        </td>
+                                        <td>4</td>
+                                        <td><a href="">
+                                                Donna R. Folse
+                                            </a></td>
+                                        <td>1</td>
+                                        <td>red</td>
+                                        <td>XS</td>
+                                        <td>20.00 $</td>
+                                        <td>
+                                            <ul class="btnsTotal">
+                                                <li>
+                                                    <button class="btnPayTotal">
+                                                        Pay
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa fa-edit"></i>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa fa-trash"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            </label>
+                                        </td>
+                                        <td>5</td>
+                                        <td><a href="">
+                                                Donna R. Folse
+                                            </a></td>
+                                        <td>1</td>
+                                        <td>red</td>
+                                        <td>XS</td>
+                                        <td>20.00 $</td>
+                                        <td>
+                                            <ul class="btnsTotal">
+                                                <li>
+                                                    <button class="btnPayTotal">
+                                                        Pay
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa fa-edit"></i>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa fa-trash"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <ul class="pagenation">
+                                <li><a href="">prev</a></li>
+                                <li><a href="">1</a></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="">next</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 whiteLogo">
+            <a href="">
+              <img class="img-fluid" src="../assets/whiteLogo.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-6">
+            <ul class="siteMap">
+              <li><a href="">ABOUT US</a></li>
+              <li><a href="">Tarrifs</a></li>
+              <li><a href="">LOGISTIC TERMS</a></li>
+              <li><a href="">SERVICES</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-6">
+            <ul class="siteMap">
+              <li><a href="">SHOPS</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">NEWS</a></li>
+              <li><a href="">CONTACT</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <ul class="appLinks">
+              <li>
+                <a href="">
+                  <img class="img-fluid" src="../assets/google.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img class="img-fluid" src="../assets/ios.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+<script type="text/javascript" src="js/main.js"></script></body>
+
+</html>
